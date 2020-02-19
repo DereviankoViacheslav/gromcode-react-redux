@@ -3,11 +3,11 @@ import React from 'react';
 export const themes = {
   dark: {
     fontColor: '#ffffff',
-    backgroundColor: '#222222'
+    background: '#222222'
   },
   light: {
     fontColor: '#000000',
-    backgroundColor: '#eeeeee'
+    background: '#eeeeee'
   }
 };
 
