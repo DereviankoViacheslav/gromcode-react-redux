@@ -1,7 +1,7 @@
 import { ADD_USER, DELETE_USER } from './users.actions'
 
 const initialState = {
-  userList: []
+  usersList: []
 };
 
 export default function reduser(state = initialState, action) {
@@ -9,12 +9,12 @@ export default function reduser(state = initialState, action) {
     case ADD_USER:
       return {
         ...state,
-        userList: [...state.userList, action.payload]
+        usersList: [...state.usersList, action.payload]
       };
     case DELETE_USER:
       return {
         ...state,
-        userList: state.userList.filter(({ id }) => id !== action.payload)
+        usersList: state.usersList.filter(({ id }) => id !== action.payload)
       };
     default:
       return state;
