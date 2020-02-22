@@ -1,10 +1,14 @@
 import React from 'react';
-import MyComponent from './MyComponent';
+import { Provider } from 'react-redux';
+import store from './store';
+import UsersList from './users/UsersList';
 import './app.scss';
 
 function App() {
   return (
-    <MyComponent />
+    <Provider store={store}>
+      <UsersList />
+    </Provider>
   );
 }
 
