@@ -11,7 +11,7 @@ function UsersList({ users, goPrev, goNext, currentPage }) {
   let startIndex = currentPage * itemsPerPage;
   const showedUsers = users
     .slice(startIndex, itemsPerPage + startIndex)
-    .map(({ id, ...user }) => <User key={id} {...user} />);
+    .map((user) => <User key={user.id} {...user} />);
 
   return (
     <div>
