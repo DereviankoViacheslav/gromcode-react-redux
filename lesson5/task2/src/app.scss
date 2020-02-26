@@ -4,7 +4,6 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 32px;
 }
 
 #root {
@@ -14,25 +13,37 @@ body {
   align-items: center;
 }
 
-.counter {
-  margin: auto;
+.transfer-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
 
-  &__button {
-    width: 48px;
-    height: 48px;
-    border: 2px solid grey;
-    border-radius: 8px;
-    background: transparent;
-    font-weight: 700;
-    font-size: 24px;
-    cursor: pointer;
-    outline: none;
+.options {
+  width: 260px;
+  padding: 16px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0;
   }
 
-  &__value {
-    margin: 16px;
+  &__title {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    line-height: 24px;
+  }
+
+  &__list-item {
+    background: transparent;
+    margin: 8px 0;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    line-height: 24px;
+    border-radius: 8px;
   }
 }
