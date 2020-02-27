@@ -1,24 +1,8 @@
-export const ADD_USER = 'ADD_USER';
-export const DELETE_USER = 'DELETE_USER';
-export const UPDATE_USER = 'UPDATE_USER';
+export const SET_FILTER_TEXT = 'SET_FILTER_TEXT';
 
-export function addUser(userData) {
+export function setFilterText(text) {
   return {
-    type: ADD_USER,
-    payload: { userData }
-  };
-};
-
-export function deleteUser(userId) {
-  return {
-    type: DELETE_USER,
-    payload: { userId }
-  };
-};
-
-export function updateUser(userId, userData) {
-  return {
-    type: UPDATE_USER,
-    payload: { userId, userData }
+    type: SET_FILTER_TEXT,
+    payload: { text }
   };
 };
