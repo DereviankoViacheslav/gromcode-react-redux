@@ -1,13 +1,17 @@
+import './app.scss';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-import TransferList from './options/TransferList';
-import './app.scss';
+import UserInfo from './users/UserInfo';
+import SearchField from './users/SearchField';
 
 function App() {
   return (
     <Provider store={store}>
-      <TransferList />
+      <div className="page">
+        <UserInfo />
+        <SearchField />
+      </div>
     </Provider>
   );
 }
