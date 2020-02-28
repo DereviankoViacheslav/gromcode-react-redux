@@ -1,13 +1,13 @@
+import './app.scss';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-import UsersList from './users/UsersList';
-import './app.scss';
+import Weather from './weather/Weather';
 
 function App() {
   return (
     <Provider store={store}>
-      <UsersList />
+      <Weather />
     </Provider>
   );
 }
