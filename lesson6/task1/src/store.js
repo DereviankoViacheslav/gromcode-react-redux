@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, compose } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux';
 import counterReduser from './counter.reducer';
 
 const logger = (store) => (next) => (action) => {
